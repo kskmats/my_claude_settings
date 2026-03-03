@@ -1,0 +1,80 @@
+# キャッシュファイル
+cache/
+paste-cache/
+stats-cache.json
+install-counts-cache.json
+
+# ダウンロードファイル
+downloads/
+
+# ファイル履歴（バージョン管理不要）
+file-history/
+
+# デバッグファイル
+debug/
+
+# 履歴ファイル
+history.jsonl
+
+# IDE関連
+ide/
+
+# planファイル
+plans/
+
+# プラグインのキャッシュとインストール状態
+plugins/cache/
+plugins/blocklist.json
+plugins/installed_plugins.json
+plugins/known_marketplaces.json
+plugins/marketplaces/
+
+# プロジェクト固有のデータ（個人環境依存）
+projects/
+
+# セッション環境（個人環境依存）
+session-env/
+
+# ローカル設定（個人環境依存）
+settings.local.json
+
+# シェルスナップショット（個人環境依存）
+shell-snapshots/
+
+# 統計・テレメトリデータ
+statsig/
+telemetry/
+
+# タスクデータ（セッション固有）
+tasks/
+
+# TODOリスト（個人のタスク管理）
+todos/
+
+# 使用状況データ
+usage-data/
+
+# MCP認証キャッシュ・認証情報
+mcp-needs-auth-cache.json
+.credentials.json
+
+# macOS関連
+.DS_Store
+
+# obsidian同期のステートファイルはgit管理不要
+sync-state.json
+obsidian-hook-state.json
+logs/
+
+# Pythonキャッシュ
+__pycache__/
+scripts/__pycache__/
+
+# バックアップ
+backups/
+
+# その他の一時ファイル
+*.log
+*.tmp
+*.lock
+

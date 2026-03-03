@@ -1,0 +1,95 @@
+{
+    "mcpServers": {
+        "terraform": {
+            "type": "stdio",
+            "command": "docker",
+            "args": [
+                "run",
+                "-i",
+                "--rm",
+                "hashicorp/terraform-mcp-server"
+            ],
+            "env": {}
+        },
+        "context7": {
+            "type": "http",
+            "url": "https://mcp.context7.com/mcp",
+            "headers": {
+                "CONTEXT7_API_KEY": "<CONTEXT7_API_KEY>"
+            }
+        },
+        "aws-knowledge-mcp-server": {
+            "type": "http",
+            "url": "https://knowledge-mcp.global.api.aws"
+        },
+        "docbase-mcp": {
+            "type": "http",
+            "url": "https://mcp.docbase.io/mcp"
+        },
+        "slack-explorer-mcp": {
+            "type": "stdio",
+            "command": "docker",
+        "args": [
+            "run",
+            "-v",
+            "<CA_CERT_PATH>:/etc/ssl/certs/ca-certificates.crt:ro",
+            "-i",
+            "--rm",
+            "--pull",
+            "always",
+            "-e",
+            "NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt",
+            "-e",
+            "SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt",
+            "-e",
+            "REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt",
+            "-e",
+            "CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt",
+            "-e",
+            "SLACK_USER_TOKEN=<Slack User Token>",
+            "ghcr.io/shibayu36/slack-explorer-mcp:latest"
+            ],
+        "env": {}
+        },
+        "backlog": {
+            "command": "docker",
+            "args": [
+                "run",
+                "-i",
+                "--rm",
+                "-v",
+                "<CA_CERT_PATH>:<CA_CERT_CONTAINER_PATH>:ro",
+                "--pull",
+                "always",
+                "-e",
+                "BACKLOG_DOMAIN=<Backlog Domain>",
+                "-e",
+                "BACKLOG_API_KEY=<Backlog API Key>",
+                "-e",
+                "SSL_CERT_FILE=<CA_CERT_CONTAINER_PATH>",
+                "-e",
+                "REQUESTS_CA_BUNDLE=<CA_CERT_CONTAINER_PATH>",
+                "-e",
+                "NODE_EXTRA_CA_CERTS=<CA_CERT_CONTAINER_PATH>",
+                "-e",
+                "ENABLE_TOOLSETS=space,project,issue,wiki",
+                "-e",
+                "HTTP_PROXY",
+                "-e",
+                "HTTPS_PROXY",
+                "-e",
+                "http_proxy",
+                "-e",
+                "https_proxy",
+                "-e",
+                "NO_PROXY",
+                "-e",
+                "no_proxy",
+                "-e",
+                "NODE_ENV=development",
+                "<Backlog MCP Docker Image>"
+                ],
+            "disabled": false
+        }    
+    }
+}
