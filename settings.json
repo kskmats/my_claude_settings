@@ -86,7 +86,9 @@
     "deslop@kuu-marketplace": true,
     "dig@kuu-marketplace": true,
     "fix-ci@kuu-marketplace": true,
-    "obsidian@obsidian-skills": true
+    "obsidian@obsidian-skills": true,
+    "claude-md-management@claude-plugins-official": true
   },
-  "skipDangerousModePermissionPrompt": true
+  "skipDangerousModePermissionPrompt": true,
+  "effortLevel": "high"
 }
