@@ -75,7 +75,7 @@
   },
   "statusLine": {
     "type": "command",
-    "command": "npx -y ccstatusline@latest",
+    "command": "node /Users/k-matsuda/.claude/statusline-command.sh",
     "padding": 0
   },
   "enabledPlugins": {

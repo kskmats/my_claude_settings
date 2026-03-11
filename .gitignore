@@ -72,6 +72,13 @@ scripts/__pycache__/
 
 # バックアップ
 backups/
+*.bak
+
+# ステータスラインキャッシュ
+.statusline-cache/
+
+# 画像キャッシュ
+image-cache/
 
 # その他の一時ファイル
 *.log
