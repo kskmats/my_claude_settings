@@ -26,7 +26,8 @@
 該当する場合は記載ツールを利用して、アクセス/操作を行うこと。
 
 |対象|ツール|
-|Google Workspace(Gmail・・Drive・Sheetsなど)|GWS CLI|
+|Google Workspace(Gmail・Calender・Drive・Sheetsなど)|GWS CLI|
+|Obsidian|Obsidian CLI|
 
 - ツールがインストールされていない場合は、インストールされてない旨をユーザーに通知する
 - ツールを利用してアクセスできない場合は、代替手段を検討しそれを用いること
