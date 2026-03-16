@@ -34,15 +34,7 @@ Claude Code のグローバルMCP設定は `~/.claude.json`（リポジトリ外
 
 ### マスキングされている値
 
-| プレースホルダ | 説明 |
-|--------------|------|
-| `<CONTEXT7_API_KEY>` | Context7 の API キー |
-| `<Slack User Token>` | Slack のユーザートークン |
-| `<Backlog API Key>` | Backlog の API キー |
-| `<Backlog Domain>` | Backlog のドメイン |
-| `<Backlog MCP Docker Image>` | Backlog MCP サーバーの Docker イメージ |
-| `<CA_CERT_PATH>` | ホスト側の CA 証明書ファイルパス |
-| `<CA_CERT_CONTAINER_PATH>` | コンテナ内の CA 証明書マウント先パス |
+現在、マスキングが必要なプレースホルダーはありません。
 
 ## 設定のポイント
 
